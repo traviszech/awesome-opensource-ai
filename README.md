@@ -1,0 +1,498 @@
+# Awesome Open Source AI
+
+> Curated list of the **best truly open-source** (OSI-approved) AI projects, models, tools, and infrastructure.  
+
+<div align="center">
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/yourusername/awesome-open-source-ai/pulls)
+[![Contributors](https://img.shields.io/github/contributors/yourusername/awesome-open-source-ai?style=flat-square)](https://github.com/alvinunreal/awesome-opensource-ai/graphs/contributors)
+
+</div>
+
+## 📋 Contents
+
+- [🧬 1. Core Frameworks & Libraries](#-1-core-frameworks--libraries)
+- [🧠 2. Open Foundation Models](#-2-open-foundation-models)
+- [⚡ 3. Inference Engines & Serving](#-3-inference-engines--serving)
+- [🤖 4. Agentic AI & Multi-Agent Systems](#-4-agentic-ai--multi-agent-systems)
+- [🔍 5. Retrieval-Augmented Generation (RAG) & Knowledge](#-5-retrieval-augmented-generation-rag--knowledge)
+- [🎨 6. Generative Media Tools](#-6-generative-media-tools)
+- [🛠️ 7. Training & Fine-tuning Ecosystem](#-7-training--fine-tuning-ecosystem)
+- [📊 8. MLOps / LLMOps & Production](#-8-mlops--llmops--production)
+- [📈 9. Evaluation, Benchmarks & Datasets](#-9-evaluation-benchmarks--datasets)
+- [🛡️ 10. AI Safety, Alignment & Interpretability](#-10-ai-safety-alignment--interpretability)
+- [🧩 11. Specialized Domains](#-11-specialized-domains)
+- [🖥️ 12. User Interfaces & Self-hosted Platforms](#-12-user-interfaces--self-hosted-platforms)
+- [🧪 13. Developer Tools & Integrations](#-13-developer-tools--integrations)
+- [📚 14. Resources & Learning](#-14-resources--learning)
+
+---
+
+### 🧬 1. Core Frameworks & Libraries
+
+> Foundational building blocks for AI/ML development. Everything from low-level tensors to high-level training utilities. Strictly OSI-approved, actively maintained, high-quality only.
+
+#### Deep Learning Frameworks
+
+- **[PyTorch](https://github.com/pytorch/pytorch)** ![GitHub stars](https://img.shields.io/github/stars/pytorch/pytorch?style=social) - Dynamic computation graphs, Pythonic API, dominant in research and production. The current standard for most frontier AI work.
+- **[TensorFlow](https://github.com/tensorflow/tensorflow)** ![GitHub stars](https://img.shields.io/github/stars/tensorflow/tensorflow?style=social) - End-to-end platform with excellent production deployment, TPU support, and large-scale serving tools.
+- **[JAX](https://github.com/jax-ml/jax)** ![GitHub stars](https://img.shields.io/github/stars/jax-ml/jax?style=social) + **[Flax](https://github.com/google/flax)** ![GitHub stars](https://img.shields.io/github/stars/google/flax?style=social) - High-performance numerical computing with composable transformations (JIT, vmap, grad). Rising favorite for research and scientific ML.
+- **[Keras](https://github.com/keras-team/keras)** ![GitHub stars](https://img.shields.io/github/stars/keras-team/keras?style=social) - High-level, beginner-friendly API that now runs on multiple backends (TensorFlow, JAX, PyTorch). Perfect for rapid experimentation.
+
+#### Data Processing & Manipulation
+
+- **[Pandas](https://github.com/pandas-dev/pandas)** ![GitHub stars](https://img.shields.io/github/stars/pandas-dev/pandas?style=social) - The gold standard for data analysis and manipulation in Python.
+- **[Polars](https://github.com/pola-rs/polars)** ![GitHub stars](https://img.shields.io/github/stars/pola-rs/polars?style=social) - Blazing-fast DataFrame library (Rust backend) - modern alternative to pandas for large-scale workloads.
+- **[Dask](https://github.com/dask/dask)** ![GitHub stars](https://img.shields.io/github/stars/dask/dask?style=social) - Parallel computing for big data - scales pandas/NumPy/scikit-learn to clusters.
+- **[NumPy](https://github.com/numpy/numpy)** ![GitHub stars](https://img.shields.io/github/stars/numpy/numpy?style=social) - Fundamental array computing library that powers almost every AI stack.
+- **[SciPy](https://github.com/scipy/scipy)** ![GitHub stars](https://img.shields.io/github/stars/scipy/scipy?style=social) - Scientific computing algorithms (optimization, linear algebra, statistics, signal processing).
+
+#### Classical ML & Gradient Boosting
+
+- **[scikit-learn](https://github.com/scikit-learn/scikit-learn)** ![GitHub stars](https://img.shields.io/github/stars/scikit-learn/scikit-learn?style=social) - Industry-standard library for traditional machine learning (classification, regression, clustering, pipelines).
+- **[XGBoost](https://github.com/dmlc/xgboost)** ![GitHub stars](https://img.shields.io/github/stars/dmlc/xgboost?style=social) - Scalable, high-performance gradient boosting library. Still dominates Kaggle and tabular competitions.
+- **[LightGBM](https://github.com/microsoft/LightGBM)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/LightGBM?style=social) - Microsoft’s ultra-fast gradient boosting framework, optimized for speed and memory.
+- **[CatBoost](https://github.com/catboost/catboost)** ![GitHub stars](https://img.shields.io/github/stars/catboost/catboost?style=social) - Gradient boosting that handles categorical features natively with great out-of-the-box performance.
+
+#### AutoML & Hyperparameter Optimization
+
+- **[Optuna](https://github.com/optuna/optuna)** ![GitHub stars](https://img.shields.io/github/stars/optuna/optuna?style=social) - Modern, define-by-run hyperparameter optimization with pruning and visualizations. Extremely popular in 2026.
+- **[AutoGluon](https://github.com/autogluon/autogluon)** ![GitHub stars](https://img.shields.io/github/stars/autogluon/autogluon?style=social) - AWS AutoML toolkit for tabular, image, text, and multimodal data - state-of-the-art with almost zero code.
+- **[FLAML](https://github.com/microsoft/FLAML)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/FLAML?style=social) - Microsoft’s fast & lightweight AutoML focused on efficiency and low compute.
+- **[AutoKeras](https://github.com/keras-team/autokeras)** ![GitHub stars](https://img.shields.io/github/stars/keras-team/autokeras?style=social) - Neural architecture search on top of Keras.
+- **[TPOT](https://github.com/epistasislab/tpot)** ![GitHub stars](https://img.shields.io/github/stars/epistasislab/tpot?style=social) - Genetic programming-based AutoML for full pipeline optimization.
+
+#### Model Training & Optimization Utilities
+
+- **[Hugging Face Accelerate](https://github.com/huggingface/accelerate)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/accelerate?style=social) - Simple API to make training scripts run on any hardware (multi-GPU, TPU, mixed precision) with minimal code changes.
+- **[DeepSpeed](https://github.com/microsoft/DeepSpeed)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/DeepSpeed?style=social) - Microsoft’s deep learning optimization library for extreme-scale training (ZeRO, offloading, MoE).
+- **[PyTorch Lightning](https://github.com/Lightning-AI/lightning)** ![GitHub stars](https://img.shields.io/github/stars/Lightning-AI/lightning?style=social) - High-level wrapper for PyTorch that removes boilerplate and adds best practices.
+- **[ONNX Runtime](https://github.com/microsoft/onnxruntime)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/onnxruntime?style=social) - High-performance inference and training for ONNX models across hardware.
+
+---
+
+### 🧠 2. Open Foundation Models
+
+> Pre-trained base and instruction-tuned models with publicly released weights. The beating heart of the open-source AI revolution.
+
+#### Large Language Models (Base + Chat)
+
+- **[Llama 4 (Meta)](https://github.com/meta-llama/llama)** ![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama?style=social) - Latest flagship open LLM series (8B–405B). Exceptional reasoning, multilingual, and long-context performance.
+- **[Qwen 2.5 / Qwen3 (Alibaba)](https://github.com/QwenLM/Qwen)** ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen?style=social) - State-of-the-art Chinese + English models (0.5B–72B). Tops many leaderboards for coding, math, and instruction following.
+- **[DeepSeek-V3 / R1 (DeepSeek)](https://github.com/deepseek-ai/DeepSeek-V3)** ![GitHub stars](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3?style=social) - Mixture-of-Experts model with 671B total parameters (37B active). Insanely strong at reasoning and math.
+- **[Gemma 3 (Google)](https://github.com/google/gemma)** ![GitHub stars](https://img.shields.io/github/stars/google/gemma?style=social) - Lightweight yet powerful series (2B–27B). Excellent on-device and research use.
+- **[Mistral Large / Nemo / Small (Mistral AI)](https://github.com/mistralai)** - High-performance European models with strong multilingual and tool-use capabilities.
+- **[Phi-4 / Phi-3.5 (Microsoft)](https://github.com/microsoft/Phi-3)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/Phi-3?style=social) - Small but mighty models (3.8B–14B) optimized for edge devices and on-device inference.
+
+#### Coding & Reasoning Models
+
+- **[DeepSeek-Coder-V2 / R1-Coder](https://github.com/deepseek-ai/DeepSeek-Coder)** ![GitHub stars](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-Coder?style=social) - Best-in-class open coding model (236B MoE). Outperforms closed models on many code benchmarks.
+- **[CodeLlama / CodeGemma](https://github.com/facebookresearch/codellama)** ![GitHub stars](https://img.shields.io/github/stars/facebookresearch/codellama?style=social) - Meta’s specialized coding variants built on Llama. Still heavily used for fine-tuning.
+- **[Qwen2.5-Coder](https://github.com/QwenLM/Qwen2.5-Coder)** ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen2.5-Coder?style=social) - Dedicated coding version of Qwen - currently leading open coding leaderboards.
+- **[StarCoder2 (BigCode)](https://github.com/bigcode-project/starcoder2)** ![GitHub stars](https://img.shields.io/github/stars/bigcode-project/starcoder2?style=social) - 15B model trained on 600+ programming languages. Community favorite for transparency.
+
+#### Multimodal Models (Vision + Language)
+
+- **[LLaVA 1.6 / Next (Liu et al.)](https://github.com/haotian-liu/LLaVA)** ![GitHub stars](https://img.shields.io/github/stars/haotian-liu/LLaVA?style=social) - Most popular open vision-language model. Strong image understanding and reasoning.
+- **[Phi-3.5-Vision / Phi-4-Multimodal (Microsoft)](https://github.com/microsoft/Phi-3)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/Phi-3?style=social) - Lightweight multimodal with excellent chart/table/document understanding.
+- **[Qwen2.5-VL (Alibaba)](https://github.com/QwenLM/Qwen-VL)** ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen-VL?style=social) - State-of-the-art open multimodal (text + image + video). Tops many VL benchmarks.
+- **[InternVL 2.5 (OpenGVLab)](https://github.com/OpenGVLab/InternVL)** ![GitHub stars](https://img.shields.io/github/stars/OpenGVLab/InternVL?style=social) - Massive open multimodal family (up to 26B) with strong performance on OCR, charts, and video.
+
+#### Speech & Audio Models (TTS, STT, Music)
+
+- **[Whisper (OpenAI → community forks)](https://github.com/openai/whisper)** ![GitHub stars](https://img.shields.io/github/stars/openai/whisper?style=social) - The gold-standard open speech-to-text model. Massive community fine-tunes available.
+- **[OuteTTS / CosyVoice 2](https://github.com/OuteAI/OuteTTS)** ![GitHub stars](https://img.shields.io/github/stars/OuteAI/OuteTTS?style=social) - High-quality open TTS with natural prosody and multilingual support.
+- **[Fish Speech / StyleTTS 2](https://github.com/fishaudio/fish-speech)** ![GitHub stars](https://img.shields.io/github/stars/fishaudio/fish-speech?style=social) - Zero-shot TTS with excellent voice cloning. Extremely popular in 2026.
+- **[MusicGen / AudioCraft (Meta)](https://github.com/facebookresearch/audiocraft)** ![GitHub stars](https://img.shields.io/github/stars/facebookresearch/audiocraft?style=social) - Open music and audio generation models.
+
+#### Video & Animation Models
+
+- **[Open-Sora / Open-Sora-Plan](https://github.com/hpcaitech/Open-Sora)** ![GitHub stars](https://img.shields.io/github/stars/hpcaitech/Open-Sora?style=social) - Fully open video generation model rivaling closed systems.
+- **[CogVideoX (Zhipu AI / community)](https://github.com/THUDM/CogVideo)** ![GitHub stars](https://img.shields.io/github/stars/THUDM/CogVideo?style=social) - High-quality open text-to-video model (5B–12B).
+- **[Mochi 1 (Genmo)](https://github.com/genmoai/mochi)** ![GitHub stars](https://img.shields.io/github/stars/genmoai/mochi?style=social) - 10B open video model with impressive motion and consistency.
+- **[AnimateDiff / Stable Video Diffusion (community forks)](https://github.com/guoyww/AnimateDiff)** ![GitHub stars](https://img.shields.io/github/stars/guoyww/AnimateDiff?style=social) - Motion module ecosystem for turning images into video.
+
+---
+
+### ⚡ 3. Inference Engines & Serving
+
+> High-performance runtimes and servers for running open models locally, on-device, or at scale.
+
+#### Local / On-device Inference
+
+- **[llama.cpp](https://github.com/ggerganov/llama.cpp)** ![GitHub stars](https://img.shields.io/github/stars/ggerganov/llama.cpp?style=social) - Pure C/C++ inference engine with GGUF format support. The gold standard for CPU/GPU/Apple Silicon on-device running.
+- **[Ollama](https://github.com/ollama/ollama)** ![GitHub stars](https://img.shields.io/github/stars/ollama/ollama?style=social) - Dead-simple local LLM runner with a one-line install, model registry, and OpenAI-compatible API.
+- **[MLX](https://github.com/ml-explore/mlx)** ![GitHub stars](https://img.shields.io/github/stars/ml-explore/mlx?style=social) (Apple) - High-performance array framework + LLM inference optimized for Apple Silicon.
+- **[llama-cpp-python](https://github.com/abetlen/llama-cpp-python)** ![GitHub stars](https://img.shields.io/github/stars/abetlen/llama-cpp-python?style=social) - Official Python bindings for llama.cpp.
+- **[KoboldCpp](https://github.com/LostRuins/koboldcpp)** ![GitHub stars](https://img.shields.io/github/stars/LostRuins/koboldcpp?style=social) - User-friendly llama.cpp fork focused on role-playing and creative writing.
+
+#### High-performance Serving & API Servers
+
+- **[vLLM](https://github.com/vllm-project/vllm)** ![GitHub stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social) - State-of-the-art serving engine with PagedAttention and continuous batching. Currently the fastest production-grade LLM server.
+- **[Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/text-generation-inference?style=social) - Hugging Face’s production-ready Rust-based server.
+- **[SGLang](https://github.com/sgl-project/sglang)** ![GitHub stars](https://img.shields.io/github/stars/sgl-project/sglang?style=social) - Next-gen serving framework with RadixAttention.
+- **[TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)** ![GitHub stars](https://img.shields.io/github/stars/NVIDIA/TensorRT-LLM?style=social) - NVIDIA’s official high-performance inference backend.
+- **[Aphrodite Engine](https://github.com/PygmalionAI/aphrodite-engine)** ![GitHub stars](https://img.shields.io/github/stars/PygmalionAI/aphrodite-engine?style=social) - vLLM fork optimized for role-play and creative writing.
+
+#### Quantization, Distillation & Optimization
+
+- **[GGUF](https://github.com/ggerganov/llama.cpp)** ![GitHub stars](https://img.shields.io/github/stars/ggerganov/llama.cpp?style=social) (part of llama.cpp) - Modern quantized format that powers most local inference.
+- **[bitsandbytes](https://github.com/bitsandbytes-foundation/bitsandbytes)** ![GitHub stars](https://img.shields.io/github/stars/bitsandbytes-foundation/bitsandbytes?style=social) - 8-bit and 4-bit optimizers + quantization.
+- **[AutoAWQ](https://github.com/casper-hansen/AutoAWQ)** ![GitHub stars](https://img.shields.io/github/stars/casper-hansen/AutoAWQ?style=social) - Activation-aware Weight Quantization toolkit.
+- **[AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ)** ![GitHub stars](https://img.shields.io/github/stars/AutoGPTQ/AutoGPTQ?style=social) - GPTQ quantization framework.
+- **[HQQ](https://github.com/mobiusml/hqq)** ![GitHub stars](https://img.shields.io/github/stars/mobiusml/hqq?style=social) - Half-Quadratic Quantization - ultra-fast method rising in 2026.
+- **[ExLlamaV2](https://github.com/turboderp/exllamav2)** ![GitHub stars](https://img.shields.io/github/stars/turboderp/exllamav2?style=social) - Highly optimized CUDA kernels for 4-bit/8-bit inference.
+- **[Optimum](https://github.com/huggingface/optimum)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/optimum?style=social) - Hardware-specific acceleration and quantization.
+
+---
+
+### 🤖 4. Agentic AI & Multi-Agent Systems
+
+> Frameworks and tools for building autonomous, goal-oriented AI agents.
+
+#### Single-Agent Frameworks
+
+- **[LangGraph](https://github.com/langchain-ai/langgraph)** ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=social) - Stateful, controllable agent orchestration.
+- **[CrewAI](https://github.com/crewAIInc/crewAI)** ![GitHub stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=social) - Role-based agent framework.
+- **[AutoGen (AG2)](https://github.com/microsoft/autogen)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/autogen?style=social) - Flexible multi-agent conversation framework.
+- **[LangChain](https://github.com/langchain-ai/langchain)** ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=social) - Foundational library for agents, chains, and memory.
+
+#### Multi-Agent Orchestration
+
+- **[MetaGPT](https://github.com/FoundationAgents/MetaGPT)** ![GitHub stars](https://img.shields.io/github/stars/FoundationAgents/MetaGPT?style=social) - Simulates an entire “AI software company”.
+- **[Swarm](https://github.com/openai/swarm)** ![GitHub stars](https://img.shields.io/github/stars/openai/swarm?style=social) - Lightweight multi-agent orchestration from OpenAI.
+- **[Swarms](https://github.com/kyegomez/swarms)** ![GitHub stars](https://img.shields.io/github/stars/kyegomez/swarms?style=social) - Bleeding-edge enterprise multi-agent orchestration.
+- **[Llama-Agents](https://github.com/run-llama/llama-agents)** ![GitHub stars](https://img.shields.io/github/stars/run-llama/llama-agents?style=social) - Async-first multi-agent system.
+
+#### Autonomous Coding Agents
+
+- **[OpenHands (ex-OpenDevin)](https://github.com/All-Hands-AI/OpenHands)** ![GitHub stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=social) - Full-featured open-source AI software engineer.
+- **[Goose](https://github.com/block/goose)** ![GitHub stars](https://img.shields.io/github/stars/block/goose?style=social) - Extensible on-machine AI agent for development tasks.
+- **[OpenCode](https://github.com/anomalyco/opencode)** ![GitHub stars](https://img.shields.io/github/stars/anomalyco/opencode?style=social) - Terminal-native autonomous coding agent.
+- **[Aider](https://github.com/paul-gauthier/aider)** ![GitHub stars](https://img.shields.io/github/stars/paul-gauthier/aider?style=social) - Command-line pair-programming agent.
+
+#### Domain-Specific Agents
+
+- **[Langflow](https://github.com/langflow-ai/langflow)** ![GitHub stars](https://img.shields.io/github/stars/langflow-ai/langflow?style=social) - Visual low-code platform for agentic workflows.
+- **[Dify](https://github.com/langgenius/dify)** ![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=social) - Production-ready agentic workflow platform.
+- **[OWL (camel-ai/owl)](https://github.com/camel-ai/owl)** ![GitHub stars](https://img.shields.io/github/stars/camel-ai/owl?style=social) - Advanced multi-agent collaboration system.
+- **[SuperAGI](https://github.com/TransformerOptimus/SuperAGI)** ![GitHub stars](https://img.shields.io/github/stars/TransformerOptimus/SuperAGI?style=social) - Dev-first autonomous AI agent platform.
+
+---
+
+### 🔍 5. Retrieval-Augmented Generation (RAG) & Knowledge
+
+> Tools that connect LLMs to your private data through vector search and advanced retrieval.
+
+#### Vector Databases & Search Engines
+
+- **[Chroma](https://github.com/chroma-core/chroma)** ![GitHub stars](https://img.shields.io/github/stars/chroma-core/chroma?style=social) - Most popular open-source embedding database.
+- **[Qdrant](https://github.com/qdrant/qdrant)** ![GitHub stars](https://img.shields.io/github/stars/qdrant/qdrant?style=social) - High-performance vector search engine in Rust.
+- **[Weaviate](https://github.com/weaviate/weaviate)** ![GitHub stars](https://img.shields.io/github/stars/weaviate/weaviate?style=social) - GraphQL-native vector search engine.
+- **[Milvus](https://github.com/milvus-io/milvus)** ![GitHub stars](https://img.shields.io/github/stars/milvus-io/milvus?style=social) - Scalable cloud-native vector database.
+- **[LanceDB](https://github.com/lancedb/lancedb)** ![GitHub stars](https://img.shields.io/github/stars/lancedb/lancedb?style=social) - Serverless vector DB optimized for multimodal data.
+- **[pgvector](https://github.com/pgvector/pgvector)** ![GitHub stars](https://img.shields.io/github/stars/pgvector/pgvector?style=social) - PostgreSQL extension for vector similarity search.
+
+#### Embedding Models
+
+- **[sentence-transformers](https://github.com/UKPLab/sentence-transformers)** ![GitHub stars](https://img.shields.io/github/stars/UKPLab/sentence-transformers?style=social) - Classic library for sentence and image embeddings.
+- **[BGE (FlagEmbedding)](https://github.com/FlagOpen/FlagEmbedding)** ![GitHub stars](https://img.shields.io/github/stars/FlagOpen/FlagEmbedding?style=social) - BAAI’s best-in-class embedding family.
+- **[E5 (Microsoft)](https://github.com/microsoft/unilm/tree/master/e5)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/unilm?style=social) - High-performance text embeddings for retrieval.
+
+#### RAG Frameworks & Advanced Retrieval Tools
+
+- **[LlamaIndex](https://github.com/run-llama/llama_index)** ![GitHub stars](https://img.shields.io/github/stars/run-llama/llama_index?style=social) - Full-featured RAG pipeline with advanced indexing.
+- **[Haystack](https://github.com/deepset-ai/haystack)** ![GitHub stars](https://img.shields.io/github/stars/deepset-ai/haystack?style=social) - End-to-end NLP and RAG framework.
+- **[RAGFlow](https://github.com/infiniflow/ragflow)** ![GitHub stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=social) - Deep-document-understanding RAG engine.
+- **[GraphRAG (Microsoft)](https://github.com/microsoft/graphrag)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/graphrag?style=social) - Knowledge-graph-based RAG.
+- **[Unstructured](https://github.com/Unstructured-IO/unstructured)** ![GitHub stars](https://img.shields.io/github/stars/Unstructured-IO/unstructured?style=social) - Best-in-class document preprocessing.
+- **[ColPali / ColQwen](https://github.com/illuin-tech/colpali)** ![GitHub stars](https://img.shields.io/github/stars/illuin-tech/colpali?style=social) - Vision-language models for document retrieval.
+
+---
+
+### 🎨 6. Generative Media Tools
+
+> Open-source tools for creating, editing, and enhancing images, video, audio, and 3D content.
+
+#### Image Generation & Editing
+
+- **[ComfyUI](https://github.com/Comfy-Org/ComfyUI)** ![GitHub stars](https://img.shields.io/github/stars/Comfy-Org/ComfyUI?style=social) - Node-based visual workflow editor for Stable Diffusion, FLUX, etc.
+- **[Stable Diffusion WebUI (A1111)](https://github.com/AUTOMATIC1111/stable-diffusion-webui)** ![GitHub stars](https://img.shields.io/github/stars/AUTOMATIC1111/stable-diffusion-webui?style=social) - The original all-in-one UI with massive extension ecosystem.
+- **[Fooocus](https://github.com/lllyasviel/Fooocus)** ![GitHub stars](https://img.shields.io/github/stars/lllyasviel/Fooocus?style=social) - Midjourney-style UI with beautiful out-of-the-box results.
+- **[FLUX.1 / FLUX.2 (Black Forest Labs)](https://github.com/black-forest-labs/flux)** ![GitHub stars](https://img.shields.io/github/stars/black-forest-labs/flux?style=social) - State-of-the-art open text-to-image model family.
+- **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** ![GitHub stars](https://img.shields.io/github/stars/invoke-ai/InvokeAI?style=social) - Full-featured creative studio.
+- **[Stable Diffusion 3.5 (Stability AI)](https://github.com/Stability-AI/stable-diffusion)** ![GitHub stars](https://img.shields.io/github/stars/Stability-AI/stable-diffusion?style=social) - Latest open-weight diffusion model.
+
+#### Video Generation
+
+- **[Wan2.2 (Alibaba)](https://github.com/Wan-Video/Wan2.1)** ![GitHub stars](https://img.shields.io/github/stars/Wan-Video/Wan2.1?style=social) - Leading open Mixture-of-Experts text-to-video model.
+- **[Mochi 1 (Genmo)](https://github.com/genmoai/mochi)** ![GitHub stars](https://img.shields.io/github/stars/genmoai/mochi?style=social) - 10B-parameter open video model.
+- **[LTX-Video (Lightricks)](https://github.com/Lightricks/LTX-Video)** ![GitHub stars](https://img.shields.io/github/stars/Lightricks/LTX-Video?style=social) - Fast native 4K video generation.
+- **[Open-Sora 2.0 (HPC-AI Tech)](https://github.com/hpcaitech/Open-Sora)** ![GitHub stars](https://img.shields.io/github/stars/hpcaitech/Open-Sora?style=social) - Fully open training + inference pipeline.
+- **[Stable Video Diffusion (Stability AI)](https://github.com/Stability-AI/stable-video-diffusion)** ![GitHub stars](https://img.shields.io/github/stars/Stability-AI/stable-video-diffusion?style=social) - Official image-to-video and text-to-video model.
+- **[AnimateDiff](https://github.com/guoyww/AnimateDiff)** ![GitHub stars](https://img.shields.io/github/stars/guoyww/AnimateDiff?style=social) - Motion module ecosystem.
+
+#### Audio / Music / Voice Generation
+
+- **[AudioCraft / MusicGen (Meta)](https://github.com/facebookresearch/audiocraft)** ![GitHub stars](https://img.shields.io/github/stars/facebookresearch/audiocraft?style=social) - Controllable text-to-music and audio models.
+- **[Fish Speech](https://github.com/fishaudio/fish-speech)** ![GitHub stars](https://img.shields.io/github/stars/fishaudio/fish-speech?style=social) - Zero-shot TTS and voice cloning.
+- **[CosyVoice 2](https://github.com/FunAudioLLM/CosyVoice)** ![GitHub stars](https://img.shields.io/github/stars/FunAudioLLM/CosyVoice?style=social) - Natural multilingual TTS with emotional control.
+- **[StyleTTS 2](https://github.com/yl4579/StyleTTS2)** ![GitHub stars](https://img.shields.io/github/stars/yl4579/StyleTTS2?style=social) - Expressive zero-shot TTS.
+- **[OuteTTS](https://github.com/OuteAI/OuteTTS)** ![GitHub stars](https://img.shields.io/github/stars/OuteAI/OuteTTS?style=social) - High-quality open TTS.
+- **[RVC (Retrieval-based Voice Conversion)](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)** ![GitHub stars](https://img.shields.io/github/stars/RVC-Project/Retrieval-based-Voice-Conversion-WebUI?style=social) - Gold standard for real-time voice cloning.
+
+#### 3D & Creative Tools
+
+- **[Hunyuan3D-2 (Tencent)](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)** ![GitHub stars](https://img.shields.io/github/stars/Tencent-Hunyuan/Hunyuan3D-2?style=social) - State-of-the-art open image-to-3D and text-to-3D.
+- **[Trellis (Microsoft)](https://github.com/microsoft/TRELLIS)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/TRELLIS?style=social) - Structured 3D latents for high-quality generation.
+- **[Wonder3D](https://github.com/xxlong0/Wonder3D)** ![GitHub stars](https://img.shields.io/github/stars/xxlong0/Wonder3D?style=social) - Fast multi-view consistent 3D generation.
+- **[TripoSR](https://github.com/VAST-AI-Research/TripoSR)** ![GitHub stars](https://img.shields.io/github/stars/VAST-AI-Research/TripoSR?style=social) - Lightning-fast 3D reconstruction.
+- **[gsplat (3D Gaussian Splatting tools)](https://github.com/nerfstudio-project/gsplat)** ![GitHub stars](https://img.shields.io/github/stars/nerfstudio-project/gsplat?style=social) - High-performance 3D Gaussian Splatting library.
+
+---
+
+### 🛠️ 7. Training & Fine-tuning Ecosystem
+
+> Complete toolkit for training models from scratch, efficient fine-tuning, synthetic data, and distributed scaling.
+
+#### Full Training Frameworks
+
+- **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)** ![GitHub stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=social) - One-stop unified framework for SFT, DPO, ORPO, KTO with web UI.
+- **[Axolotl](https://github.com/axolotl-ai-cloud/axolotl)** ![GitHub stars](https://img.shields.io/github/stars/axolotl-ai-cloud/axolotl?style=social) - YAML-driven full pipeline for SFT, DPO, GRPO.
+- **[Unsloth](https://github.com/unslothai/unsloth)** ![GitHub stars](https://img.shields.io/github/stars/unslothai/unsloth?style=social) - 2× faster, 70% less memory fine-tuning.
+- **[LitGPT](https://github.com/Lightning-AI/litgpt)** ![GitHub stars](https://img.shields.io/github/stars/Lightning-AI/litgpt?style=social) - Clean from-scratch implementations of 20+ LLMs.
+- **[TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/trl?style=social) - Official library for RLHF, SFT, DPO, ORPO.
+
+#### LoRA / PEFT Tools
+
+- **[PEFT (Parameter-Efficient Fine-Tuning)](https://github.com/huggingface/peft)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/peft?style=social) - Official library with LoRA, QLoRA, DoRA, etc.
+- **[Liger Kernel](https://github.com/linkedin/Liger-Kernel)** ![GitHub stars](https://img.shields.io/github/stars/linkedin/Liger-Kernel?style=social) - Ultra-fast custom kernels for training speedup.
+- **[MergeKit](https://github.com/arcee-ai/mergekit)** ![GitHub stars](https://img.shields.io/github/stars/arcee-ai/mergekit?style=social) - Advanced model merging tools.
+
+#### Synthetic Data Generation
+
+- **[distilabel](https://github.com/argilla-io/distilabel)** ![GitHub stars](https://img.shields.io/github/stars/argilla-io/distilabel?style=social) - End-to-end pipeline for synthetic instruction data.
+- **[Data-Juicer](https://github.com/alibaba/data-juicer)** ![GitHub stars](https://img.shields.io/github/stars/alibaba/data-juicer?style=social) - High-performance data processing for LLM training.
+- **[Argilla](https://github.com/argilla-io/argilla)** ![GitHub stars](https://img.shields.io/github/stars/argilla-io/argilla?style=social) - Open-source data labeling + synthetic data platform.
+- **[SDV (Synthetic Data Vault)](https://github.com/sdv-dev/SDV)** ![GitHub stars](https://img.shields.io/github/stars/sdv-dev/SDV?style=social) - High-fidelity tabular and relational synthetic data.
+
+#### Distributed Training
+
+- **[DeepSpeed](https://github.com/deepspeedai/DeepSpeed)** ![GitHub stars](https://img.shields.io/github/stars/deepspeedai/DeepSpeed?style=social) - Extreme-scale training optimizations.
+- **[Colossal-AI](https://github.com/hpcaitech/ColossalAI)** ![GitHub stars](https://img.shields.io/github/stars/hpcaitech/ColossalAI?style=social) - Unified system for 100B+ models.
+- **[Ray Train](https://github.com/ray-project/ray)** ![GitHub stars](https://img.shields.io/github/stars/ray-project/ray?style=social) - Scalable distributed training.
+
+---
+
+### 📊 8. MLOps / LLMOps & Production
+
+> Tools for experiment tracking, deployment, monitoring, evaluation, and safety in production.
+
+#### Experiment Tracking & Versioning
+
+- **[MLflow](https://github.com/mlflow/mlflow)** ![GitHub stars](https://img.shields.io/github/stars/mlflow/mlflow?style=social) - End-to-end open platform for the ML/LLM lifecycle.
+- **[DVC (Data Version Control)](https://github.com/iterative/dvc)** ![GitHub stars](https://img.shields.io/github/stars/iterative/dvc?style=social) - Git-like versioning for data and models.
+- **[Weights & Biases Weave](https://github.com/wandb/weave)** ![GitHub stars](https://img.shields.io/github/stars/wandb/weave?style=social) - Open-source tracing and experiment tracking.
+
+#### Deployment & Orchestration
+
+- **[BentoML](https://github.com/bentoml/BentoML)** ![GitHub stars](https://img.shields.io/github/stars/bentoml/BentoML?style=social) - Unified framework to build, ship, and scale AI apps.
+- **[Ray Serve](https://github.com/ray-project/ray)** ![GitHub stars](https://img.shields.io/github/stars/ray-project/ray?style=social) - Scalable model serving library.
+- **[Kubeflow](https://github.com/kubeflow/kubeflow)** ![GitHub stars](https://img.shields.io/github/stars/kubeflow/kubeflow?style=social) - Kubernetes-native ML/LLM platform.
+- **[KServe](https://github.com/kserve/kserve)** ![GitHub stars](https://img.shields.io/github/stars/kserve/kserve?style=social) - Kubernetes-based model serving.
+
+#### Monitoring, Evaluation & Observability
+
+- **[Langfuse](https://github.com/langfuse/langfuse)** ![GitHub stars](https://img.shields.io/github/stars/langfuse/langfuse?style=social) - #1 open-source LLM observability platform.
+- **[Phoenix (Arize)](https://github.com/Arize-ai/phoenix)** ![GitHub stars](https://img.shields.io/github/stars/Arize-ai/phoenix?style=social) - AI observability & evaluation platform.
+- **[Evidently](https://github.com/evidentlyai/evidently)** ![GitHub stars](https://img.shields.io/github/stars/evidentlyai/evidently?style=social) - ML & LLM monitoring framework.
+- **[Opik (Comet)](https://github.com/comet-ml/opik)** ![GitHub stars](https://img.shields.io/github/stars/comet-ml/opik?style=social) - Production-ready LLM evaluation platform.
+
+#### Guardrails & Safety Tools
+
+- **[NVIDIA NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)** ![GitHub stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Guardrails?style=social) - Programmable guardrails toolkit.
+- **[Guardrails AI](https://github.com/guardrails-ai/guardrails)** ![GitHub stars](https://img.shields.io/github/stars/guardrails-ai/guardrails?style=social) - Structure and validation for LLM outputs.
+- **[LLM Guard](https://github.com/protectai/llm-guard)** ![GitHub stars](https://img.shields.io/github/stars/protectai/llm-guard?style=social) - Comprehensive input/output scanner.
+- **[LlamaGuard (Meta)](https://github.com/meta-llama/PurpleLlama)** ![GitHub stars](https://img.shields.io/github/stars/meta-llama/PurpleLlama?style=social) - Open safety classifier models.
+- **[Garak](https://github.com/leondz/garak)** ![GitHub stars](https://img.shields.io/github/stars/leondz/garak?style=social) - LLM vulnerability scanner.
+- **[Promptfoo](https://github.com/promptfoo/promptfoo)** ![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social) - LLM testing and red-teaming framework.
+
+---
+
+### 📈 9. Evaluation, Benchmarks & Datasets
+
+> Standardized ways to measure performance and access high-quality open datasets.
+
+#### Benchmark Suites
+
+- **[lm-evaluation-harness (EleutherAI)](https://github.com/EleutherAI/lm-evaluation-harness)** ![GitHub stars](https://img.shields.io/github/stars/EleutherAI/lm-evaluation-harness?style=social) - De-facto standard for generative model evaluation.
+- **[HELM (Stanford)](https://github.com/stanford-crfm/helm)** ![GitHub stars](https://img.shields.io/github/stars/stanford-crfm/helm?style=social) - Holistic Evaluation of Language Models.
+- **[GAIA](https://github.com/gaia-benchmark/gaia)** ![GitHub stars](https://img.shields.io/github/stars/gaia-benchmark/gaia?style=social) - Real-world multi-step agentic benchmark.
+- **[LiveCodeBench](https://github.com/livecodebench/livecodebench)** ![GitHub stars](https://img.shields.io/github/stars/livecodebench/livecodebench?style=social) - Contamination-free coding benchmark.
+- **[MMLU-Pro / GPQA](https://github.com/TIGER-AI-Lab/MMLU-Pro)** ![GitHub stars](https://img.shields.io/github/stars/TIGER-AI-Lab/MMLU-Pro?style=social) - Hardened expert-level benchmarks.
+
+#### Evaluation Frameworks
+
+- **[DeepEval](https://github.com/confident-ai/deepeval)** ![GitHub stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=social) - The “Pytest for LLMs”.
+- **[RAGAs](https://github.com/explodinggradients/ragas)** ![GitHub stars](https://img.shields.io/github/stars/explodinggradients/ragas?style=social) - End-to-end RAG evaluation framework.
+- **[Hugging Face Evaluate](https://github.com/huggingface/evaluate)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/evaluate?style=social) - Standardized evaluation metrics.
+
+#### High-quality Open Datasets & Data Tools
+
+- **[Hugging Face Datasets](https://github.com/huggingface/datasets)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/datasets?style=social) - Largest open repository of datasets.
+- **[FineWeb / FineWeb-2 (Hugging Face)](https://huggingface.co/datasets/HuggingFaceFW/fineweb)** - Curated 15T+ token web dataset for pre-training.
+- **[RedPajama](https://github.com/togethercomputer/RedPajama-Data)** ![GitHub stars](https://img.shields.io/github/stars/togethercomputer/RedPajama-Data?style=social) - Clean, reproducible Llama training data mix.
+- **[OSWorld](https://github.com/OSWorld/OSWorld)** ![GitHub stars](https://img.shields.io/github/stars/OSWorld/OSWorld?style=social) - Multimodal agent benchmark dataset.
+
+---
+
+### 🛡️ 10. AI Safety, Alignment & Interpretability
+
+> Tools for making AI systems safer, more aligned, interpretable, and robust.
+
+#### Alignment & RLHF Tools
+
+- **[TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/trl?style=social) - Official library for RLHF, DPO, ORPO, KTO.
+- **[Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf)** ![GitHub stars](https://img.shields.io/github/stars/PKU-Alignment/safe-rlhf?style=social) - Safe reinforcement learning from human feedback.
+- **[Alignment Handbook](https://github.com/huggingface/alignment-handbook)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/alignment-handbook?style=social) - Complete recipes for full-stack alignment.
+- **[OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)** ![GitHub stars](https://img.shields.io/github/stars/OpenRLHF/OpenRLHF?style=social) - High-performance distributed RLHF framework.
+
+#### Interpretability & Explainability
+
+- **[TransformerLens](https://github.com/TransformerLensOrg/TransformerLens)** ![GitHub stars](https://img.shields.io/github/stars/TransformerLensOrg/TransformerLens?style=social) - Gold-standard for mechanistic interpretability.
+- **[nnsight](https://github.com/ndif-team/nnsight)** ![GitHub stars](https://img.shields.io/github/stars/ndif-team/nnsight?style=social) - Scalable library for intervening on neural networks.
+- **[SAELens](https://github.com/jbloomAus/SAELens)** ![GitHub stars](https://img.shields.io/github/stars/jbloomAus/SAELens?style=social) - Sparse autoencoders for interpretable features.
+- **[Captum](https://github.com/pytorch/captum)** ![GitHub stars](https://img.shields.io/github/stars/pytorch/captum?style=social) - PyTorch’s official interpretability library.
+
+#### Adversarial & Red-teaming Tools
+
+- **[Garak](https://github.com/NVIDIA/garak)** ![GitHub stars](https://img.shields.io/github/stars/NVIDIA/garak?style=social) - Automated LLM vulnerability scanner.
+- **[PyRIT (Python Risk Identification Tool)](https://github.com/Azure/PyRIT)** ![GitHub stars](https://img.shields.io/github/stars/Azure/PyRIT?style=social) - Framework for custom adversarial testing.
+- **[Promptfoo](https://github.com/promptfoo/promptfoo)** ![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social) - Systematic prompt testing and red-teaming.
+- **[LLM Guard](https://github.com/protectai/llm-guard)** ![GitHub stars](https://img.shields.io/github/stars/protectai/llm-guard?style=social) - Input/output scanner for LLMs.
+
+---
+
+### 🧩 11. Specialized Domains
+
+#### Computer Vision
+
+- **[OpenCV](https://github.com/opencv/opencv)** ![GitHub stars](https://img.shields.io/github/stars/opencv/opencv?style=social) - World’s most widely used computer vision library.
+- **[Ultralytics YOLO](https://github.com/ultralytics/ultralytics)** ![GitHub stars](https://img.shields.io/github/stars/ultralytics/ultralytics?style=social) - State-of-the-art real-time object detection.
+- **[Detectron2](https://github.com/facebookresearch/detectron2)** ![GitHub stars](https://img.shields.io/github/stars/facebookresearch/detectron2?style=social) - High-performance object detection library.
+- **[Kornia](https://github.com/kornia/kornia)** ![GitHub stars](https://img.shields.io/github/stars/kornia/kornia?style=social) - Differentiable computer vision library.
+- **[MediaPipe](https://github.com/google-ai-edge/mediapipe)** ![GitHub stars](https://img.shields.io/github/stars/google-ai-edge/mediapipe?style=social) - Cross-platform multimodal pipelines.
+
+#### Reinforcement Learning & Robotics
+
+- **[Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3)** ![GitHub stars](https://img.shields.io/github/stars/DLR-RM/stable-baselines3?style=social) - Production-ready RL algorithms.
+- **[CleanRL](https://github.com/vwxyzjn/cleanrl)** ![GitHub stars](https://img.shields.io/github/stars/vwxyzjn/cleanrl?style=social) - Single-file readable RL implementations.
+- **[Isaac Lab](https://github.com/isaac-sim/IsaacLab)** ![GitHub stars](https://img.shields.io/github/stars/isaac-sim/IsaacLab?style=social) - GPU-accelerated robot learning framework.
+- **[Gymnasium (ex-OpenAI Gym)](https://github.com/Farama-Foundation/Gymnasium)** ![GitHub stars](https://img.shields.io/github/stars/Farama-Foundation/Gymnasium?style=social) - Standard RL environment API.
+
+#### Time Series & Scientific AI
+
+- **[Time Series Library (TSLib)](https://github.com/thuml/Time-Series-Library)** ![GitHub stars](https://img.shields.io/github/stars/thuml/Time-Series-Library?style=social) - Comprehensive benchmark for time-series models.
+- **[Chronos (Amazon)](https://github.com/amazon-science/chronos-forecasting)** ![GitHub stars](https://img.shields.io/github/stars/amazon-science/chronos-forecasting?style=social) - Pretrained foundation models for time-series forecasting.
+- **[Darts](https://github.com/unit8co/darts)** ![GitHub stars](https://img.shields.io/github/stars/unit8co/darts?style=social) - Easy-to-use time-series forecasting library.
+
+#### Edge / On-device AI
+
+- **[TensorFlow Lite](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite)** ![GitHub stars](https://img.shields.io/github/stars/tensorflow/tensorflow?style=social) - Lightweight on-device ML.
+- **[ONNX Runtime](https://github.com/microsoft/onnxruntime)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/onnxruntime?style=social) - Cross-platform high-performance inference.
+- **[OpenVINO](https://github.com/openvinotoolkit/openvino)** ![GitHub stars](https://img.shields.io/github/stars/openvinotoolkit/openvino?style=social) - Intel’s toolkit for edge deployment.
+- **[MicroTVM (Apache TVM)](https://github.com/apache/tvm)** ![GitHub stars](https://img.shields.io/github/stars/apache/tvm?style=social) - Compiler stack for microcontrollers.
+
+---
+
+### 🖥️ 12. User Interfaces & Self-hosted Platforms
+
+#### Local AI Chat UIs
+
+- **[Open WebUI](https://github.com/open-webui/open-webui)** ![GitHub stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social) - Most popular self-hosted ChatGPT-style interface.
+- **[LobeChat](https://github.com/lobehub/lobe-chat)** ![GitHub stars](https://img.shields.io/github/stars/lobehub/lobe-chat?style=social) - Sleek modern chat UI.
+- **[LibreChat](https://github.com/danny-avila/LibreChat)** ![GitHub stars](https://img.shields.io/github/stars/danny-avila/LibreChat?style=social) - Feature-packed multi-LLM interface.
+- **[HuggingChat (self-hosted)](https://github.com/huggingface/chat-ui)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/chat-ui?style=social) - Official open-source codebase for HuggingChat.
+
+#### Full Self-hosted AI Platforms
+
+- **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)** ![GitHub stars](https://img.shields.io/github/stars/Mintplex-Labs/anything-llm?style=social) - All-in-one RAG + agents platform.
+- **[Dify](https://github.com/langgenius/dify)** ![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=social) - Complete AI application platform with visual builder.
+- **[Langflow](https://github.com/langflow-ai/langflow)** ![GitHub stars](https://img.shields.io/github/stars/langflow-ai/langflow?style=social) - Visual low-code platform for LangChain flows.
+- **[Flowise](https://github.com/FlowiseAI/Flowise)** ![GitHub stars](https://img.shields.io/github/stars/FlowiseAI/Flowise?style=social) - Drag-and-drop LLM app builder.
+
+#### Desktop & Mobile AI Apps
+
+- **[GPT4All](https://github.com/nomic-ai/gpt4all)** ![GitHub stars](https://img.shields.io/github/stars/nomic-ai/gpt4all?style=social) - Privacy-first local desktop chatbot.
+- **[Jan](https://github.com/janhq/jan)** ![GitHub stars](https://img.shields.io/github/stars/janhq/jan?style=social) - Local-first AI app framework.
+- **[SillyTavern](https://github.com/SillyTavern/SillyTavern)** ![GitHub stars](https://img.shields.io/github/stars/SillyTavern/SillyTavern?style=social) - Highly customizable role-playing frontend.
+
+---
+
+### 🧪 13. Developer Tools & Integrations
+
+#### AI Coding Assistants (open-source)
+
+- **[Continue](https://github.com/continuedev/continue)** ![GitHub stars](https://img.shields.io/github/stars/continuedev/continue?style=social) - Open-source AI coding autopilot for VS Code & JetBrains.
+- **[Tabby](https://github.com/TabbyML/tabby)** ![GitHub stars](https://img.shields.io/github/stars/TabbyML/tabby?style=social) - Self-hosted AI coding assistant.
+- **[Open Interpreter](https://github.com/OpenInterpreter/open-interpreter)** ![GitHub stars](https://img.shields.io/github/stars/OpenInterpreter/open-interpreter?style=social) - Lets LLMs run code locally.
+- **[Aider](https://github.com/paul-gauthier/aider)** ![GitHub stars](https://img.shields.io/github/stars/paul-gauthier/aider?style=social) - Terminal-based AI pair programmer.
+
+#### IDE Plugins & Extensions
+
+- **[Continue VS Code / JetBrains](https://github.com/continuedev/continue)** ![GitHub stars](https://img.shields.io/github/stars/continuedev/continue?style=social) - Most installed open-source AI extension.
+- **[Jupyter AI](https://github.com/jupyterlab/jupyter-ai)** ![GitHub stars](https://img.shields.io/github/stars/jupyterlab/jupyter-ai?style=social) - Chat and code generation inside notebooks.
+
+#### Testing & Debugging Tools
+
+- **[Promptfoo](https://github.com/promptfoo/promptfoo)** ![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social) - Systematic LLM testing framework.
+- **[DeepEval](https://github.com/confident-ai/deepeval)** ![GitHub stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=social) - LLM unit-testing framework.
+- **[Garak](https://github.com/NVIDIA/garak)** ![GitHub stars](https://img.shields.io/github/stars/NVIDIA/garak?style=social) - LLM vulnerability scanner.
+- **[Phoenix (Arize)](https://github.com/Arize-ai/phoenix)** ![GitHub stars](https://img.shields.io/github/stars/Arize-ai/phoenix?style=social) - AI observability for development.
+
+---
+
+### 📚 14. Resources & Learning
+
+#### Papers with Open Implementations
+
+- **[Papers with Code](https://paperswithcode.com)** - Definitive database linking papers to open code and datasets.
+- **[Hugging Face Papers](https://huggingface.co/papers)** - Daily-updated feed of the latest arXiv papers with open weights.
+- **[Open LLM Leaderboard (Hugging Face)](https://huggingface.co/spaces/open-llm-leaderboard)** - Real-time ranking of open models.
+
+#### Communities, Forums & Newsletters
+
+- **[Hugging Face Discussions](https://discuss.huggingface.co)** - Largest open AI forum.
+- **[r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA)** - Go-to subreddit for local/open-source LLM topics.
+- **[Open Source AI Weekly](https://buttondown.com/opensourceai)** & **[Latent Space](https://www.latent.space)** - Top newsletters.
+
+#### Courses & Interactive Playgrounds
+
+- **[Hugging Face Course](https://huggingface.co/learn)** - Free hands-on courses using only open models.
+- **[Fast.ai](https://github.com/fastai/fastai)** ![GitHub stars](https://img.shields.io/github/stars/fastai/fastai?style=social) - Legendary practical deep learning course.
+- **[LangChain Academy](https://academy.langchain.com)** - Free courses on agents and RAG.
+- **[ComfyUI Examples & Workflows](https://github.com/Comfy-Org/ComfyUI_examples)** ![GitHub stars](https://img.shields.io/github/stars/Comfy-Org/ComfyUI_examples?style=social) - Massive collection of generative media workflows.
+
+---
+
+## Contributing
+
+Contributions are **highly welcome**!  
+Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines (quality standards, formatting, license requirements, etc.).
+
+- Only **OSI-approved** licenses
+- Projects must be actively maintained (commits in last 6 months)
+- High-quality, well-documented, real adoption
+
+## License
+
+This list itself is licensed under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).  
+Feel free to use it for any purpose.
+
+---
+
+**Made with ❤️ for the open-source AI community.**  
+Star the repo if you find it useful - it helps more people discover the best open tools!
+
+---
