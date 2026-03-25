@@ -201,6 +201,7 @@
 - **[Qdrant](https://github.com/qdrant/qdrant)** ![GitHub stars](https://img.shields.io/github/stars/qdrant/qdrant?style=social) - High-performance vector search engine in Rust.
 - **[Weaviate](https://github.com/weaviate/weaviate)** ![GitHub stars](https://img.shields.io/github/stars/weaviate/weaviate?style=social) - GraphQL-native vector search engine.
 - **[Milvus](https://github.com/milvus-io/milvus)** ![GitHub stars](https://img.shields.io/github/stars/milvus-io/milvus?style=social) - Scalable cloud-native vector database.
+- **[NornicDB](https://github.com/orneryd/NornicDB)** ![GitHub stars](https://img.shields.io/github/stars/orneryd/NornicDB?style=social) - Golang Low-latency graph + vector hybrid retrieval, Neo4j and qDrant driver compatible.
 - **[LanceDB](https://github.com/lancedb/lancedb)** ![GitHub stars](https://img.shields.io/github/stars/lancedb/lancedb?style=social) - Serverless vector DB optimized for multimodal data.
 - **[pgvector](https://github.com/pgvector/pgvector)** ![GitHub stars](https://img.shields.io/github/stars/pgvector/pgvector?style=social) - PostgreSQL extension for vector similarity search.
 
