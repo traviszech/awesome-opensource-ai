@@ -27,6 +27,26 @@ Meeting 3/4 is **not acceptable**. Projects must meet all criteria. The only pat
 
 ---
 
+## Curation Philosophy: "Current Best"
+
+This list represents **"what you should know about now"** — not a historical archive.
+
+### Replace, Don't Accumulate
+
+When a newer version clearly supersedes an existing entry in the same category:
+
+| Scenario | Action | Example |
+|----------|--------|---------|
+| **New major version** | Update existing entry | PyTorch 2.4 → 2.5: Edit the line, don't add both |
+| **Minor bump** | Skip unless significant | v1.2 → v1.3: Not worth a PR |
+| **Both versions warranted** | Rare exception | Python 3.11/3.12 both deployed; SD 1.5 vs XL (different use cases) |
+
+**The test:** Would a practitioner looking at this list today care about *both* versions, or just the current one?
+
+For rapidly evolving families (foundation models, frameworks with numbered releases), always update the existing entry rather than appending. The list stays lean and relevant.
+
+---
+
 ## What We're Looking For
 
 ### ✅ Elite Indicators

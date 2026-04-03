@@ -52,6 +52,19 @@ For each PR not skipped:
 - Is this project genuinely notable? Real adoption, useful to the community?
 - Avoid listing every possible project - the list should stay curated and high-signal
 
+### Version Replacement Check (for updates/new versions)
+
+When a PR adds a newer version of an already-listed project:
+
+1. **Search README** for existing entries from same org/repo family (e.g., "Qwen", "Gemma", "PyTorch")
+2. **Determine relationship:** Is the new version a direct successor or a different variant?
+3. **Apply "Current Best" principle:**
+   - **Direct successor** (same architecture, just newer) → PR should also *remove* the old version entry
+   - **Coexisting warranted** → Only if both serve different use cases or both widely deployed (LTS, major version differences)
+   - **Minor bump** (v1.2 → v1.3) → Request changes, not worth a list update
+
+**Action:** If PR adds without removing the superseded entry, request changes with reference to [CONTRIBUTING.md Curation Philosophy](../CONTRIBUTING.md#curation-philosophy-current-best).
+
 ### 4. For removals
 
 - Is the reason stated? If not, ask.

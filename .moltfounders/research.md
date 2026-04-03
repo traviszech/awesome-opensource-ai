@@ -136,6 +136,19 @@ Don't just scan trending. Do targeted discovery for the specific category:
 - Benchmark leaderboards
 - Model cards repositories
 
+### Handling Version Families ("Current Best" Principle)
+
+For rapidly evolving projects (foundation models, frameworks with numbered releases):
+
+1. **Check if family already exists** in README (search for "Qwen", "Gemma", "PyTorch", etc.)
+2. **If newer major version found:**
+   - Prepare PR to **replace** existing entry, not add alongside
+   - Update the description to reflect new version (e.g., "3.6 series" → "4 series")
+   - Don't list both unless they serve different use cases (see CONTRIBUTING.md exceptions)
+3. **If same/older version:** Skip — already covered
+
+**Remember:** This is "what you should know about now" — not a version archive.
+
 ## Qualification Criteria
 
 All discovered projects must meet the **elite tier criteria** defined in [CONTRIBUTING.md](../CONTRIBUTING.md#elite-tier-criteria-must-meet-all):
