@@ -8,7 +8,9 @@ Thank you for considering contributing to this curated list. We maintain **elite
 
 This is not a directory of every open-source AI project. We curate tools that have survived real-world usage, earned community trust, and demonstrate sustained excellence.
 
-### Elite Tier Criteria (Must Meet ALL)
+### Elite Tier Criteria (Must Meet 4 out of 5)
+
+Projects must satisfy **at least 4 of the following 5 criteria** to be considered elite-tier:
 
 | Criterion | Threshold | Why It Matters |
 |-----------|-----------|----------------|
@@ -18,11 +20,14 @@ This is not a directory of every open-source AI project. We curate tools that ha
 | **🏭 Production Usage** | Evidence of real-world deployment | Case studies, integrations, production issues/PRs |
 | **📚 Quality Standards** | Proper docs, tests, releases | Not a thrown-together experiment |
 
-### Exceptions (Meet 4/5 if one is exceptional)
+### Strong Preference
+
+Ideally projects should meet **all 5 criteria**. Meeting 4/5 is acceptable if the missing criterion is compensated by:
 
 - **🏢 Major Organization Backing** — Microsoft, Google, Meta, Hugging Face, NVIDIA, etc. (stars threshold: 500+)
 - **🎯 Foundational Tool** — Other elite tools in this list depend on it
 - **🔬 Research Lab Origin** — Stanford, Berkeley, DeepMind, OpenAI (pre-AGI era), etc.
+- **💡 Exceptional Innovation** — Unique approach solving a critical gap, with strong production traction
 
 ---
 
@@ -53,7 +58,7 @@ This is not a directory of every open-source AI project. We curate tools that ha
 
 ### Before Submitting
 
-1. **Verify your project meets ALL elite criteria** — if not, don't submit here
+1. **Verify your project meets at least 4 of 5 elite criteria** — if not, don't submit here
 2. **Check for duplicates** — search the README first
 3. **Ensure correct categorization** — place in the most specific section
 4. **Write a factual description** — one sentence, no fluff
@@ -77,19 +82,20 @@ Your PR must include:
 ```markdown
 ## Project: [Name]
 
-### Elite Criteria Checklist
+### Elite Criteria Checklist (4/5 Required)
 
-- [ ] ⭐ 1000+ GitHub stars (or 500+ with major org backing)
-- [ ] 📅 12+ months old
-- [ ] 🔄 Active development (commits within last 30 days)
-- [ ] 🏭 Production usage evidence: [link to case study/integration]
-- [ ] 📚 Quality docs/tests: [link to docs/tests]
+- [ ] **Elite Criteria:** 4 of 5 met
+  - ⭐ Stars: [count] (threshold: 1000+)
+  - 📅 Age: [months] (threshold: 12+)
+  - 🔄 Active: [last commit date] (within 30 days)
+  - 🏭 Production: [evidence link] (case study/integration)
+  - 📚 Quality: [docs link] (tests/releases)
 
 ### Evidence of Production Usage
 <!-- Links to case studies, integrations, or production usage -->
 
 ### Why This Belongs in Elite Tier
-<!-- One paragraph explaining unique value and differentiation -->
+<!-- Explain which 4+ criteria you meet and why the project is battle-tested -->
 
 ### Category
 <!-- Which section this belongs in -->
@@ -160,11 +166,11 @@ Each category has established elite-tier benchmarks. Your submission should be c
 The maintainer reserves final judgment on all submissions, including:
 
 - **Rejecting** projects that technically meet criteria but lack production substance
-- **Accepting** exceptional projects that may fall short on stars but demonstrate unique innovation with strong backing
+- **Accepting** exceptional projects that may fall short on one criterion but demonstrate unique innovation with strong backing
 - **Removing** existing entries if quality degrades or project becomes abandoned
 - **Elevating** tools from emerging to elite tier as they mature
 
-**Remember:** Meeting all criteria guarantees consideration, not acceptance. This list is about trust and proven value.
+**Remember:** Meeting 4/5 criteria guarantees consideration, not acceptance. This list is about trust and proven value.
 
 ---
 
