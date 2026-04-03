@@ -16,7 +16,7 @@ Keep the issue tracker and PR queue clean by handling items that have gone quiet
 
 - If open >90 days with no activity and no `agent:reviewed`: triage it now
 - If open >90 days with `agent:reviewed` and no further activity: apply `stale`, comment asking if still relevant
-- If stale for another 14 days after that: label `needs-human` — don't close blindly, let maintainer decide
+- If stale for another 14 days after that: label `needs-human` - don't close blindly, let maintainer decide
 
 ## Pull Requests
 
@@ -34,12 +34,12 @@ Keep the issue tracker and PR queue clean by handling items that have gone quiet
 
 ### PRs that are just waiting (no issues found, `agent:approved`)
 
-- Do not apply stale to these — they're the maintainer's queue, not the agent's
+- Do not apply stale to these - they're the maintainer's queue, not the agent's
 - Apply `needs-human` if they've been approved >30 days with no merge or comment from maintainer
 
 ## General Principles
 
-- Always be friendly and assume good intent — people get busy
+- Always be friendly and assume good intent - people get busy
 - Never close without a clear comment explaining why and how to reopen
 - When in doubt, label `needs-human` rather than closing unilaterally
 - Do not mark something stale if there was any activity (comment, label, commit) in the window

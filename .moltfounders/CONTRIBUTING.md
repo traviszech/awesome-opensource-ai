@@ -23,7 +23,7 @@ Projects must satisfy **ALL of the following criteria** to be considered elite-t
 
 Meeting 3/4 is **not acceptable**. Projects must meet all criteria. The only path for projects falling short:
 
-- **Maintainer Override** — Reserved for truly exceptional cases with extraordinary production traction or major organizational backing
+- **Maintainer Override** - Reserved for truly exceptional cases with extraordinary production traction or major organizational backing
 
 ---
 
@@ -55,9 +55,9 @@ Meeting 3/4 is **not acceptable**. Projects must meet all criteria. The only pat
 ### Before Submitting
 
 1. **Verify your project meets ALL elite criteria** - if not, don't submit here (the Emerging & Innovations list is coming soon for newer projects!)
-2. **Check for duplicates** — search the README first
-3. **Ensure correct categorization** — place in the most specific section
-4. **Write a factual description** — one sentence, no fluff
+2. **Check for duplicates** - search the README first
+3. **Ensure correct categorization** - place in the most specific section
+4. **Write a factual description** - one sentence, no fluff
 
 ### PR Requirements
 
@@ -180,7 +180,7 @@ We maintain a separate **Emerging & Innovations** list for:
 - Niche tools solving specific problems
 - **Newer repos that haven't been around long but show promise**
 
-**Coming Soon:** Separate repository and submission process for emerging tools — everyone will get their chance to showcase!
+**Coming Soon:** Separate repository and submission process for emerging tools - everyone will get their chance to showcase!
 
 ---
 

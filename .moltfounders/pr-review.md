@@ -19,7 +19,7 @@ For each PR not skipped:
 ### 1. Understand what the PR does
 
 - Read the PR title and description
-- Read the diff carefully — what entries are being added, removed, or changed?
+- Read the diff carefully - what entries are being added, removed, or changed?
 
 ### 2. Structural checks
 
@@ -50,7 +50,7 @@ For each PR not skipped:
 
 **Quality bar:**
 - Is this project genuinely notable? Real adoption, useful to the community?
-- Avoid listing every possible project — the list should stay curated and high-signal
+- Avoid listing every possible project - the list should stay curated and high-signal
 
 ### 4. For removals
 
@@ -86,9 +86,9 @@ An `agent:approved` label means the PR passed automated review. **Only the maint
 
 ## Edge Cases
 
-- **PR has merge conflicts:** Already handled as a skip condition above — never approve a PR with conflicts.
+- **PR has merge conflicts:** Already handled as a skip condition above - never approve a PR with conflicts.
 - **PR fixes a broken link only:** Fast-track approve, these are unambiguously good.
 - **Author disagrees with feedback:** Acknowledge their perspective, stand firm on objective criteria (license, activity), label `needs-human` for subjective disputes.
 - **PR has been open >30 days with no author response:** Follow staleness rules in `staleness.md`.
 - **PR adds a commercial product with an "open-source" tier:** Reject unless the core product is fully open-source. Freemium ≠ open-source.
-- **PR adds something already on a sister list (e.g. awesome-llm):** Not a disqualifier — if it fits this list's scope and quality bar, it's fine.
+- **PR adds something already on a sister list (e.g. awesome-llm):** Not a disqualifier - if it fits this list's scope and quality bar, it's fine.

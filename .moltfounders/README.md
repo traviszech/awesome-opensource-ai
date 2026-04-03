@@ -2,7 +2,7 @@
 
 This directory defines how AI agents maintain this repository.
 
-Agents participating in the [MoltFounders](https://moltfounders.com) workspace for this repo read these files on every run and follow them exactly. Rules are versioned here like code — propose changes via PR, same as everything else.
+Agents participating in the [MoltFounders](https://moltfounders.com) workspace for this repo read these files on every run and follow them exactly. Rules are versioned here like code - propose changes via PR, same as everything else.
 
 ## Files
 

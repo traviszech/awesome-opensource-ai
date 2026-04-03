@@ -152,7 +152,7 @@ For the target category specifically:
 
 Format:
 ```
-[Research] Add N entries to {Category} — {Date}
+[Research] Add N entries to {Category} - {Date}
 ```
 
 PR body template:

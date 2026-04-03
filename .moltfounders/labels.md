@@ -6,7 +6,7 @@ Canonical GitHub labels used by agents in this repository.
 
 | Label | Color | Description |
 |-------|-------|-------------|
-| `agent:reviewed` | `#0075ca` | Item was reviewed by an agent — will not be re-reviewed automatically |
+| `agent:reviewed` | `#0075ca` | Item was reviewed by an agent - will not be re-reviewed automatically |
 | `agent:commented` | `#cfd3d7` | Agent left a comment on this item |
 | `agent:approved` | `#0e8a16` | Agent approved this PR (still needs maintainer merge) |
 | `agent:changes-requested` | `#e4e669` | Agent requested changes on this PR |
@@ -16,7 +16,7 @@ Canonical GitHub labels used by agents in this repository.
 
 | Label | Color | Description |
 |-------|-------|-------------|
-| `needs-human` | `#e11d48` | Needs maintainer attention — agent could not resolve |
+| `needs-human` | `#e11d48` | Needs maintainer attention - agent could not resolve |
 | `stale` | `#ededed` | No activity for an extended period |
 | `duplicate` | `#cfd3d7` | Already exists in the list |
 | `not-open-source` | `#b60205` | Project does not meet open-source criteria |

@@ -16,11 +16,11 @@ For each issue not skipped:
 
 ### 1. Classify the issue type
 
-- **Addition request** — someone wants a new project added
-- **Removal request** — someone wants an existing entry removed (outdated, no longer open-source, etc.)
-- **Correction** — fixing a description, link, or category placement
-- **Question / discussion** — not a concrete change request
-- **Spam / off-topic** — unrelated to the repo purpose
+- **Addition request** - someone wants a new project added
+- **Removal request** - someone wants an existing entry removed (outdated, no longer open-source, etc.)
+- **Correction** - fixing a description, link, or category placement
+- **Question / discussion** - not a concrete change request
+- **Spam / off-topic** - unrelated to the repo purpose
 
 ### 2. Evaluate based on type
 
@@ -30,7 +30,7 @@ For each issue not skipped:
 - Last commit within 6 months? (Check GitHub API)
 - Does it fit an existing category in the README?
 - Is it already in the list? (Search README for project name and GitHub URL)
-- Does it have real adoption (stars, downloads, community)? Use judgment — a genuinely novel tool with fewer stars is ok.
+- Does it have real adoption (stars, downloads, community)? Use judgment - a genuinely novel tool with fewer stars is ok.
 
 **Removal requests:**
 - Is the reason valid? (project dead, license changed, moved closed-source)
@@ -54,7 +54,7 @@ Leave a clear, helpful comment:
 - Specific actionable feedback if changes are needed
 - If the submission looks solid, say so clearly and that it's ready for a PR
 
-Be friendly and constructive. Contributors put effort in — acknowledge that.
+Be friendly and constructive. Contributors put effort in - acknowledge that.
 
 ### 4. Apply labels
 
@@ -66,6 +66,6 @@ Be friendly and constructive. Contributors put effort in — acknowledge that.
 ## Edge Cases
 
 - **Ambiguous license:** Label `needs-human`, comment asking for clarification
-- **Project is popular but license is unclear:** Same as above — do not approve without confirmed OSI license
+- **Project is popular but license is unclear:** Same as above - do not approve without confirmed OSI license
 - **Issue is very old (>90 days, no activity):** Follow staleness rules in `staleness.md`
 - **Submitter is aggressive or rude:** Stay professional, label `needs-human`, do not engage further
