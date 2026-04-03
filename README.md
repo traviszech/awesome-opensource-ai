@@ -64,6 +64,7 @@
 - **[TensorFlow](https://github.com/tensorflow/tensorflow)** ![GitHub stars](https://img.shields.io/github/stars/tensorflow/tensorflow?style=social) - End-to-end platform with excellent production deployment, TPU support, and large-scale serving tools.
 - **[JAX](https://github.com/jax-ml/jax)** ![GitHub stars](https://img.shields.io/github/stars/jax-ml/jax?style=social) + **[Flax](https://github.com/google/flax)** ![GitHub stars](https://img.shields.io/github/stars/google/flax?style=social) - High-performance numerical computing with composable transformations (JIT, vmap, grad). Rising favorite for research and scientific ML.
 - **[Keras](https://github.com/keras-team/keras)** ![GitHub stars](https://img.shields.io/github/stars/keras-team/keras?style=social) - High-level, beginner-friendly API that now runs on multiple backends (TensorFlow, JAX, PyTorch). Perfect for rapid experimentation.
+- **[tinygrad](https://github.com/tinygrad/tinygrad)** ![GitHub stars](https://img.shields.io/github/stars/tinygrad/tinygrad?style=social) - Minimalist deep learning framework with tiny code footprint. The "you like pytorch? you like micrograd? you love tinygrad!" philosophy - simple yet powerful.
 - **[PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric)** ![GitHub stars](https://img.shields.io/github/stars/pyg-team/pytorch_geometric?style=social) - Library for deep learning on irregular input data such as graphs, point clouds, and manifolds. Part of the PyTorch ecosystem.
 
 #### Rust ML Frameworks
@@ -71,6 +72,10 @@
 - **[Burn](https://github.com/tracel-ai/burn)** ![GitHub stars](https://img.shields.io/github/stars/tracel-ai/burn?style=social) - Next-generation deep learning framework in Rust. Backend-agnostic with CPU, GPU, WebAssembly support.
 - **[Candle (Hugging Face)](https://github.com/huggingface/candle)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/candle?style=social) - Minimalist ML framework for Rust. PyTorch-like API with focus on performance and simplicity.
 - **[linfa](https://github.com/rust-ml/linfa)** ![GitHub stars](https://img.shields.io/github/stars/rust-ml/linfa?style=social) - Comprehensive Rust ML toolkit with classical algorithms. scikit-learn equivalent for Rust with clustering, regression, and preprocessing.
+
+#### Julia ML Frameworks
+
+- **[Flux.jl](https://github.com/FluxML/Flux.jl)** ![GitHub stars](https://img.shields.io/github/stars/FluxML/Flux.jl?style=social) - 100% pure-Julia ML stack with lightweight abstractions on top of native GPU and AD support. Elegant, hackable, and fully integrated with Julia's scientific computing ecosystem.
 
 #### NLP & Transformers
 
@@ -82,6 +87,8 @@
 
 - **[Pandas](https://github.com/pandas-dev/pandas)** ![GitHub stars](https://img.shields.io/github/stars/pandas-dev/pandas?style=social) - The gold standard for data analysis and manipulation in Python.
 - **[Polars](https://github.com/pola-rs/polars)** ![GitHub stars](https://img.shields.io/github/stars/pola-rs/polars?style=social) - Blazing-fast DataFrame library (Rust backend) - modern alternative to pandas for large-scale workloads.
+- **[cuDF](https://github.com/rapidsai/cudf)** ![GitHub stars](https://img.shields.io/github/stars/rapidsai/cudf?style=social) - GPU DataFrame library from RAPIDS. Accelerates pandas workflows on NVIDIA GPUs with zero code changes using cuDF.pandas accelerator mode.
+- **[Modin](https://github.com/modin-project/modin)** ![GitHub stars](https://img.shields.io/github/stars/modin-project/modin?style=social) - Parallel pandas DataFrames. Scale pandas workflows by changing a single line of code - distributes data and computation automatically.
 - **[Dask](https://github.com/dask/dask)** ![GitHub stars](https://img.shields.io/github/stars/dask/dask?style=social) - Parallel computing for big data - scales pandas/NumPy/scikit-learn to clusters.
 - **[NumPy](https://github.com/numpy/numpy)** ![GitHub stars](https://img.shields.io/github/stars/numpy/numpy?style=social) - Fundamental array computing library that powers almost every AI stack.
 - **[SciPy](https://github.com/scipy/scipy)** ![GitHub stars](https://img.shields.io/github/stars/scipy/scipy?style=social) - Scientific computing algorithms (optimization, linear algebra, statistics, signal processing).
