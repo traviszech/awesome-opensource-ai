@@ -6,6 +6,8 @@
 
 *A curated list of notable open-source AI models, libraries, infrastructure, and developer tools.*
 
+> 🚧 **Coming Soon: Emerging & Innovations List** — A separate showcase for promising new projects that haven't yet met our strict elite-tier criteria. Stay tuned for the announcement! This list is battle-tested only.
+
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](./CONTRIBUTING.md)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-blue.svg?style=flat-square)](./LICENSE)
