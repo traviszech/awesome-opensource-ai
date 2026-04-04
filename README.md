@@ -337,6 +337,8 @@
 - **[Diffusers](https://github.com/huggingface/diffusers)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/diffusers?style=social) - PyTorch library for diffusion pipelines spanning image, video, and audio generation.
 - **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** ![GitHub stars](https://img.shields.io/github/stars/invoke-ai/InvokeAI?style=social) - Full-featured creative studio.
 - **[Stable Diffusion 3.5 (Stability AI)](https://github.com/Stability-AI/sd3.5)** ![GitHub stars](https://img.shields.io/github/stars/Stability-AI/sd3.5?style=social) - Latest open-weight diffusion model.
+- **[PowerPaint (OpenMMLab)](https://github.com/open-mmlab/PowerPaint)** ![GitHub stars](https://img.shields.io/github/stars/open-mmlab/PowerPaint?style=social) - Versatile image inpainting model supporting text-guided inpainting, object removal, and outpainting (ECCV 2024).
+- **[Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)** ![GitHub stars](https://img.shields.io/github/stars/xinntao/Real-ESRGAN?style=social) - Practical algorithms for general image/video super-resolution and restoration.
 
 #### Video Generation
 
@@ -358,6 +360,9 @@
 - **[StyleTTS 2](https://github.com/yl4579/StyleTTS2)** ![GitHub stars](https://img.shields.io/github/stars/yl4579/StyleTTS2?style=social) - Expressive zero-shot TTS.
 - **[OuteTTS](https://github.com/edwko/OuteTTS)** ![GitHub stars](https://img.shields.io/github/stars/edwko/OuteTTS?style=social) - High-quality open TTS.
 - **[RVC (Retrieval-based Voice Conversion)](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)** ![GitHub stars](https://img.shields.io/github/stars/RVC-Project/Retrieval-based-Voice-Conversion-WebUI?style=social) - Gold standard for real-time voice cloning.
+- **[Amphion](https://github.com/open-mmlab/Amphion)** ![GitHub stars](https://img.shields.io/github/stars/open-mmlab/Amphion?style=social) - Comprehensive toolkit for Audio, Music, and Speech Generation (9.7K stars).
+- **[YuE](https://github.com/multimodal-art-projection/YuE)** ![GitHub stars](https://img.shields.io/github/stars/multimodal-art-projection/YuE?style=social) - Open full-song generation model producing high-quality music with vocals (similar capabilities to Suno.ai but open-source).
+- **[OpenVoice](https://github.com/myshell-ai/OpenVoice)** ![GitHub stars](https://img.shields.io/github/stars/myshell-ai/OpenVoice?style=social) - Instant voice cloning by MIT and MyShell with accurate tone color cloning and style control.
 
 #### 3D & Creative Tools
 
