@@ -567,6 +567,7 @@
 - **[Newelle](https://github.com/qwersyk/Newelle)** ![GitHub stars](https://img.shields.io/github/stars/qwersyk/Newelle?style=social) - GNOME/Linux desktop virtual assistant with integrated file editor, global hotkeys, and profile manager.
 - **[NextChat](https://github.com/ChatGPTNextWeb/NextChat)** ![GitHub stars](https://img.shields.io/github/stars/ChatGPTNextWeb/NextChat?style=social) - Light and fast AI assistant supporting Web, iOS, macOS, Android, Linux, and Windows. One-click deploy with multi-model support. MIT licensed.
 - **[big-AGI](https://github.com/enricoros/big-AGI)** ![GitHub stars](https://img.shields.io/github/stars/enricoros/big-AGI?style=social) - AI suite for power users with multi-model "Beam" chats, AI personas, voice, text-to-image, code execution, and PDF import. MIT licensed.
+- **[Leon](https://github.com/leon-ai/leon)** ![GitHub stars](https://img.shields.io/github/stars/leon-ai/leon?style=social) - Your open-source personal assistant. Built around tools, context, memory, and agentic execution. Self-hosted, privacy-focused, and extensible. MIT licensed.
 
 #### Full Self-hosted AI Platforms
 
@@ -581,6 +582,11 @@
 
 - **[Jan](https://github.com/janhq/jan)** ![GitHub stars](https://img.shields.io/github/stars/janhq/jan?style=social) - Local-first AI app framework.
 - **[SillyTavern](https://github.com/SillyTavern/SillyTavern)** ![GitHub stars](https://img.shields.io/github/stars/SillyTavern/SillyTavern?style=social) - Highly customizable role-playing frontend.
+
+#### Agent & Voice Infrastructure
+
+- **[Pipecat](https://github.com/pipecat-ai/pipecat)** ![GitHub stars](https://img.shields.io/github/stars/pipecat-ai/pipecat?style=social) - Open-source framework for voice and multimodal conversational AI. Build real-time voice agents with support for speech-to-text, LLMs, text-to-speech, and live video. BSD-2-Clause licensed.
+- **[Agent Chat UI](https://github.com/langchain-ai/agent-chat-ui)** ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/agent-chat-ui?style=social) - Web app for interacting with any LangGraph agent (Python & TypeScript) via a chat interface. Stream messages, handle interruptions, and view agent state. MIT licensed.
 
 ---
 
